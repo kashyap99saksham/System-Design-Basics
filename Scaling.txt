@@ -1,0 +1,24 @@
+Two types of scaling we have :
+
+
+1. HORIZONTAL - 0 0 0 0 0 (Multiple Machines)
+  a. Load Balancing Required
+  b. Resilient (Good)
+  c. Network call betweek machines (Bad)
+  d. Data Inconsistency (Bad)
+  e. Scales Well, As users increases (Good)
+
+
+2. VERTICAL - 0 (A bigger Machine)
+              0
+              0
+  a. No Load Balancing Required
+  b. Single Point of Failure (Bad)
+  c. Inter Process Communication (Good)
+  d. Data Consistent (Good)
+  e. Hardware limit (Bad)
+
+
+
+- For less user base, prefer to use vertical scaling.
+- As user increases we can try to use Both types of scaling by picking advantages from both types of scaling.
